@@ -1,6 +1,10 @@
 name: Pulumi
 on:
-  - pull_request
+    push:
+      branches:
+        - main
+      paths:
+        - 'infra/**'
 jobs:
   preview:
     name: Preview
